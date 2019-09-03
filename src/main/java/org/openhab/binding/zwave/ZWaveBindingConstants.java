@@ -25,7 +25,7 @@ import org.eclipse.smarthome.core.thing.ThingTypeUID;
  */
 public class ZWaveBindingConstants {
 
-    public static final String BINDING_ID = "zwave";
+    public static final String BINDING_ID = "zwavevacasa";
 
     // Controllers
     public final static ThingTypeUID CONTROLLER_SERIAL = new ThingTypeUID(BINDING_ID, "serial_zstick");
