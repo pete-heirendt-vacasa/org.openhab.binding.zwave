@@ -33,11 +33,11 @@ public class ZWaveConfigProviderTest {
         ZWaveConfigProvider provider = new ZWaveConfigProvider();
 
         // Serial controller needs to return null for the thing-type
-        URI uri = new URI("thing-type:zwave:serial_zstick");
+        URI uri = new URI("thing-type:zwavevacasa:serial_zstick");
         assertNull(provider.getConfigDescription(uri, null));
 
         // Other devices return the node_id
-        uri = new URI("thing-type:zwave:device");
+        uri = new URI("thing-type:zwavevacasa:device");
         ConfigDescription config = provider.getConfigDescription(uri, null);
         assertEquals(uri, config.getUID());
         ConfigDescriptionParameter parameter = config.getParameters().get(0);
